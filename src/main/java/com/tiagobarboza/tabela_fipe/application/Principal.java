@@ -1,4 +1,4 @@
-package com.tiagobarboza.tabela_fipe.apllication;
+package com.tiagobarboza.tabela_fipe.application;
 
 import java.util.Scanner;
 import java.util.stream.Collectors;
