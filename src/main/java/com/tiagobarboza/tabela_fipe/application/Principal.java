@@ -44,7 +44,7 @@ public class Principal {
             marcas.forEach(marca -> {
                 System.out.println("COD: "+marca.codigo()+" - "+marca.nome());
             });
-            System.out.println("Informe o COD do modelo: ");
+            System.out.print("Informe o COD do modelo: ");
             int codMarca = sc.nextInt();
 
             json = consumoApi.obterDados(BASE_URL+escolhaVeiculo+"/marcas/"+codMarca+"/modelos");
@@ -63,7 +63,7 @@ public class Principal {
                 System.out.println("COD: "+m.codigo()+" - "+m.nome());;
             });
 
-            System.out.println("Digite o COD do modelo: ");
+            System.out.print("Digite o COD do modelo: ");
             var codModelo = sc.nextInt();
 
             json = consumoApi.obterDados(BASE_URL+escolhaVeiculo+"/marcas/"+codMarca+"/modelos/"+codModelo+"/anos");
